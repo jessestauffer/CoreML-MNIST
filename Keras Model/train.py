@@ -33,7 +33,8 @@ train_gen = ImageDataGenerator(
 	width_shift_range=0.08,
 	shear_range=0.3,
 	height_shift_range=0.08,
-	zoom_range=0.8
+	zoom_range=0.8,
+	rescale = 2.0,
 )
 
 val_gen = ImageDataGenerator()
