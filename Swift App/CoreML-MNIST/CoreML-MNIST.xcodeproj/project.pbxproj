@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DBB4A049217FBBF100CA810D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB4A048217FBBF100CA810D /* AppDelegate.swift */; };
+		DBB4A04B217FBBF100CA810D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB4A04A217FBBF100CA810D /* ViewController.swift */; };
+		DBB4A04E217FBBF100CA810D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB4A04C217FBBF100CA810D /* Main.storyboard */; };
+		DBB4A050217FBBF200CA810D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBB4A04F217FBBF200CA810D /* Assets.xcassets */; };
+		DBB4A053217FBBF200CA810D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB4A051217FBBF200CA810D /* LaunchScreen.storyboard */; };
+		DBB4A05E217FBBF200CA810D /* CoreML_MNISTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB4A05D217FBBF200CA810D /* CoreML_MNISTTests.swift */; };
+		DBB4A069217FBBF300CA810D /* CoreML_MNISTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB4A068217FBBF300CA810D /* CoreML_MNISTUITests.swift */; };
+		DBB4A077217FBCEE00CA810D /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB4A076217FBCEE00CA810D /* DrawingView.swift */; };
+		DBB4A07B217FC81400CA810D /* MNISTModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DBB4A07A217FC81400CA810D /* MNISTModel.mlmodel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DBB4A05A217FBBF200CA810D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBB4A03D217FBBF100CA810D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBB4A044217FBBF100CA810D;
+			remoteInfo = "CoreML-MNIST";
+		};
+		DBB4A065217FBBF200CA810D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBB4A03D217FBBF100CA810D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBB4A044217FBBF100CA810D;
+			remoteInfo = "CoreML-MNIST";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DBB4A045217FBBF100CA810D /* CoreML-MNIST.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoreML-MNIST.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBB4A048217FBBF100CA810D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DBB4A04A217FBBF100CA810D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DBB4A04D217FBBF100CA810D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DBB4A04F217FBBF200CA810D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DBB4A052217FBBF200CA810D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DBB4A054217FBBF200CA810D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBB4A059217FBBF200CA810D /* CoreML-MNISTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreML-MNISTTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBB4A05D217FBBF200CA810D /* CoreML_MNISTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreML_MNISTTests.swift; sourceTree = "<group>"; };
+		DBB4A05F217FBBF200CA810D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBB4A064217FBBF200CA810D /* CoreML-MNISTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreML-MNISTUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBB4A068217FBBF300CA810D /* CoreML_MNISTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreML_MNISTUITests.swift; sourceTree = "<group>"; };
+		DBB4A06A217FBBF300CA810D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBB4A076217FBCEE00CA810D /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
+		DBB4A07A217FC81400CA810D /* MNISTModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MNISTModel.mlmodel; path = "../../../Keras Model/MNISTModel.mlmodel"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBB4A042217FBBF100CA810D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBB4A056217FBBF200CA810D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBB4A061217FBBF200CA810D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DBB4A03C217FBBF100CA810D = {
+			isa = PBXGroup;
+			children = (
+				DBB4A047217FBBF100CA810D /* CoreML-MNIST */,
+				DBB4A05C217FBBF200CA810D /* CoreML-MNISTTests */,
+				DBB4A067217FBBF300CA810D /* CoreML-MNISTUITests */,
+				DBB4A046217FBBF100CA810D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DBB4A046217FBBF100CA810D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBB4A045217FBBF100CA810D /* CoreML-MNIST.app */,
+				DBB4A059217FBBF200CA810D /* CoreML-MNISTTests.xctest */,
+				DBB4A064217FBBF200CA810D /* CoreML-MNISTUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBB4A047217FBBF100CA810D /* CoreML-MNIST */ = {
+			isa = PBXGroup;
+			children = (
+				DBB4A048217FBBF100CA810D /* AppDelegate.swift */,
+				DBB4A04A217FBBF100CA810D /* ViewController.swift */,
+				DBB4A076217FBCEE00CA810D /* DrawingView.swift */,
+				DBB4A07A217FC81400CA810D /* MNISTModel.mlmodel */,
+				DBB4A04C217FBBF100CA810D /* Main.storyboard */,
+				DBB4A04F217FBBF200CA810D /* Assets.xcassets */,
+				DBB4A051217FBBF200CA810D /* LaunchScreen.storyboard */,
+				DBB4A054217FBBF200CA810D /* Info.plist */,
+			);
+			path = "CoreML-MNIST";
+			sourceTree = "<group>";
+		};
+		DBB4A05C217FBBF200CA810D /* CoreML-MNISTTests */ = {
+			isa = PBXGroup;
+			children = (
+				DBB4A05D217FBBF200CA810D /* CoreML_MNISTTests.swift */,
+				DBB4A05F217FBBF200CA810D /* Info.plist */,
+			);
+			path = "CoreML-MNISTTests";
+			sourceTree = "<group>";
+		};
+		DBB4A067217FBBF300CA810D /* CoreML-MNISTUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DBB4A068217FBBF300CA810D /* CoreML_MNISTUITests.swift */,
+				DBB4A06A217FBBF300CA810D /* Info.plist */,
+			);
+			path = "CoreML-MNISTUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DBB4A044217FBBF100CA810D /* CoreML-MNIST */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBB4A06D217FBBF300CA810D /* Build configuration list for PBXNativeTarget "CoreML-MNIST" */;
+			buildPhases = (
+				DBB4A041217FBBF100CA810D /* Sources */,
+				DBB4A042217FBBF100CA810D /* Frameworks */,
+				DBB4A043217FBBF100CA810D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CoreML-MNIST";
+			productName = "CoreML-MNIST";
+			productReference = DBB4A045217FBBF100CA810D /* CoreML-MNIST.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DBB4A058217FBBF200CA810D /* CoreML-MNISTTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBB4A070217FBBF300CA810D /* Build configuration list for PBXNativeTarget "CoreML-MNISTTests" */;
+			buildPhases = (
+				DBB4A055217FBBF200CA810D /* Sources */,
+				DBB4A056217FBBF200CA810D /* Frameworks */,
+				DBB4A057217FBBF200CA810D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBB4A05B217FBBF200CA810D /* PBXTargetDependency */,
+			);
+			name = "CoreML-MNISTTests";
+			productName = "CoreML-MNISTTests";
+			productReference = DBB4A059217FBBF200CA810D /* CoreML-MNISTTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DBB4A063217FBBF200CA810D /* CoreML-MNISTUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBB4A073217FBBF300CA810D /* Build configuration list for PBXNativeTarget "CoreML-MNISTUITests" */;
+			buildPhases = (
+				DBB4A060217FBBF200CA810D /* Sources */,
+				DBB4A061217FBBF200CA810D /* Frameworks */,
+				DBB4A062217FBBF200CA810D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBB4A066217FBBF200CA810D /* PBXTargetDependency */,
+			);
+			name = "CoreML-MNISTUITests";
+			productName = "CoreML-MNISTUITests";
+			productReference = DBB4A064217FBBF200CA810D /* CoreML-MNISTUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBB4A03D217FBBF100CA810D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Jesse Stauffer";
+				TargetAttributes = {
+					DBB4A044217FBBF100CA810D = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					DBB4A058217FBBF200CA810D = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = DBB4A044217FBBF100CA810D;
+					};
+					DBB4A063217FBBF200CA810D = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = DBB4A044217FBBF100CA810D;
+					};
+				};
+			};
+			buildConfigurationList = DBB4A040217FBBF100CA810D /* Build configuration list for PBXProject "CoreML-MNIST" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DBB4A03C217FBBF100CA810D;
+			productRefGroup = DBB4A046217FBBF100CA810D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBB4A044217FBBF100CA810D /* CoreML-MNIST */,
+				DBB4A058217FBBF200CA810D /* CoreML-MNISTTests */,
+				DBB4A063217FBBF200CA810D /* CoreML-MNISTUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DBB4A043217FBBF100CA810D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBB4A053217FBBF200CA810D /* LaunchScreen.storyboard in Resources */,
+				DBB4A050217FBBF200CA810D /* Assets.xcassets in Resources */,
+				DBB4A04E217FBBF100CA810D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBB4A057217FBBF200CA810D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBB4A062217FBBF200CA810D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DBB4A041217FBBF100CA810D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBB4A077217FBCEE00CA810D /* DrawingView.swift in Sources */,
+				DBB4A04B217FBBF100CA810D /* ViewController.swift in Sources */,
+				DBB4A07B217FC81400CA810D /* MNISTModel.mlmodel in Sources */,
+				DBB4A049217FBBF100CA810D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBB4A055217FBBF200CA810D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBB4A05E217FBBF200CA810D /* CoreML_MNISTTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBB4A060217FBBF200CA810D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBB4A069217FBBF300CA810D /* CoreML_MNISTUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DBB4A05B217FBBF200CA810D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBB4A044217FBBF100CA810D /* CoreML-MNIST */;
+			targetProxy = DBB4A05A217FBBF200CA810D /* PBXContainerItemProxy */;
+		};
+		DBB4A066217FBBF200CA810D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBB4A044217FBBF100CA810D /* CoreML-MNIST */;
+			targetProxy = DBB4A065217FBBF200CA810D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DBB4A04C217FBBF100CA810D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBB4A04D217FBBF100CA810D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DBB4A051217FBBF200CA810D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBB4A052217FBBF200CA810D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DBB4A06B217FBBF300CA810D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DBB4A06C217FBBF300CA810D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DBB4A06E217FBBF300CA810D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22REJF73DV;
+				INFOPLIST_FILE = "CoreML-MNIST/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jessestauffer.CoreML-MNIST";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DBB4A06F217FBBF300CA810D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22REJF73DV;
+				INFOPLIST_FILE = "CoreML-MNIST/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jessestauffer.CoreML-MNIST";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DBB4A071217FBBF300CA810D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22REJF73DV;
+				INFOPLIST_FILE = "CoreML-MNISTTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jessestauffer.CoreML-MNISTTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreML-MNIST.app/CoreML-MNIST";
+			};
+			name = Debug;
+		};
+		DBB4A072217FBBF300CA810D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22REJF73DV;
+				INFOPLIST_FILE = "CoreML-MNISTTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jessestauffer.CoreML-MNISTTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreML-MNIST.app/CoreML-MNIST";
+			};
+			name = Release;
+		};
+		DBB4A074217FBBF300CA810D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22REJF73DV;
+				INFOPLIST_FILE = "CoreML-MNISTUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jessestauffer.CoreML-MNISTUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CoreML-MNIST";
+			};
+			name = Debug;
+		};
+		DBB4A075217FBBF300CA810D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22REJF73DV;
+				INFOPLIST_FILE = "CoreML-MNISTUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jessestauffer.CoreML-MNISTUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CoreML-MNIST";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBB4A040217FBBF100CA810D /* Build configuration list for PBXProject "CoreML-MNIST" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBB4A06B217FBBF300CA810D /* Debug */,
+				DBB4A06C217FBBF300CA810D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBB4A06D217FBBF300CA810D /* Build configuration list for PBXNativeTarget "CoreML-MNIST" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBB4A06E217FBBF300CA810D /* Debug */,
+				DBB4A06F217FBBF300CA810D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBB4A070217FBBF300CA810D /* Build configuration list for PBXNativeTarget "CoreML-MNISTTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBB4A071217FBBF300CA810D /* Debug */,
+				DBB4A072217FBBF300CA810D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBB4A073217FBBF300CA810D /* Build configuration list for PBXNativeTarget "CoreML-MNISTUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBB4A074217FBBF300CA810D /* Debug */,
+				DBB4A075217FBBF300CA810D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DBB4A03D217FBBF100CA810D /* Project object */;
+}
